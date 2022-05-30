@@ -1,5 +1,5 @@
 import React from 'react';
-import {Rtg2} from './Routings/Rtg2';
+import {Rtg3} from './Routings/Rtg3';
 
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
     return (
         <div>
             {/*<Rtg1/>*/}
-            <Rtg2/>
+            {/*<Rtg2/>*/}
+            <Rtg3/>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, NavLink, Route, Routes} from 'react-router-dom';
-import styles from './Rtg1.module.css';
+import styles from './Rtg.module.css';
 
 
 export function Rtg2() {
