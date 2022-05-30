@@ -1,11 +1,14 @@
 import React from 'react';
-import {Rtg1} from './Routings/Rtg1';
+import {Rtg2} from './Routings/Rtg2';
 
 
 function App() {
 
     return (
-        <Rtg1/>
+        <div>
+            {/*<Rtg1/>*/}
+            <Rtg2/>
+        </div>
     );
 }
 
