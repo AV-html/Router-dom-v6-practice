@@ -5,10 +5,12 @@ import styles from './Rtg.module.css';
 
 export function Rtg5() {
     const activeClassName = ({isActive}: { isActive: boolean }) => (isActive ? `${styles.active} ${styles.notActive}` : styles.notActive);
+
+    // Более простая запись
+    // const activeClassName = ({isActive}: { isActive: boolean }) => (isActive ? styles.active : '');
+
     // class & style аналогично
-
     // Link - не использует activeClassName
-
     return (
         <BrowserRouter>
             <div className="App">

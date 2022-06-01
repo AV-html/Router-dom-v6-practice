@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter, NavLink, Route, Routes, useParams} from 'react-router-dom';
-import styles from './Rtg.module.css';
 
 
 const Profile = () => {
@@ -21,20 +20,19 @@ const Profile = () => {
 
 
 export function Rtg4() {
-    const activeClassName = ({isActive}: { isActive: boolean }) => (isActive ? `${styles.active} ${styles.notActive}` : styles.notActive);
     return (
         <BrowserRouter>
             <div className="App">
-                <NavLink to={'/'} className={activeClassName}>
+                <NavLink to={'/'}>
                     main
                 </NavLink>
-                <NavLink to={'/login'} className={activeClassName}>
+                <NavLink to={'/login'}>
                     login
                 </NavLink>
-                <NavLink to={'/profile/'} className={activeClassName}>
+                <NavLink to={'/profile/'}>
                     Profile
                 </NavLink>
-                <NavLink to={'/profile/1'} className={activeClassName}>
+                <NavLink to={'/profile/1'}>
                     Profile-1
                 </NavLink>
 

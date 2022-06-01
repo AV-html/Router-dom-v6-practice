@@ -1,24 +1,22 @@
 import React from 'react';
 import {BrowserRouter, NavLink, Outlet, Route, Routes} from 'react-router-dom';
-import styles from './Rtg.module.css';
 
 
 export function Rtg3() {
-    const activeClass = ({isActive}: { isActive: boolean }) => (isActive ? `${styles.active} ${styles.notActive}` : styles.notActive);
 
     return (
         <BrowserRouter>
             <div className="App">
-                <NavLink to={'/'} className={activeClass}>
+                <NavLink to={'/'}>
                     main
                 </NavLink>
-                <NavLink to={'/login'} className={activeClass}>
+                <NavLink to={'/login'}>
                     login
                 </NavLink>
-                <NavLink to={'/profile'} className={activeClass}>
+                <NavLink to={'/profile'}>
                     Profile
                 </NavLink>
-                <NavLink to={'/profile/settings'} className={activeClass}>
+                <NavLink to={'/profile/settings'}>
                     Settings
                 </NavLink>
 
