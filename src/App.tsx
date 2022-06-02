@@ -1,5 +1,5 @@
 import React from 'react';
-import {Rtg6} from './Routings/Rtg6';
+import {Rtg7} from './Routings/Rtg7';
 
 
 function App() {
@@ -22,7 +22,10 @@ function App() {
             {/*<Rtg5/>*/}
 
             <h2>useNavigate - редирект по клику</h2>
-            <Rtg6/>
+            {/*<Rtg6/>*/}
+
+            <h2>useSearchParams - query параметры</h2>
+            <Rtg7/>
         </div>
     );
 }
